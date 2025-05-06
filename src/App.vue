@@ -1,23 +1,12 @@
 <template>
   <div class="app-container">
-    <HeroSection />
-    <PhilosophySection />
-    <GallerySection />
-    <ServicesSection />
-    <TestimonialsSection />
-    <ContactSection />
-    <AppFooter />
+    <Navbar />
+    <router-view />
   </div>
 </template>
 
 <script setup>
-import HeroSection from './components/HeroSection.vue'
-import PhilosophySection from './components/PhilosophySection.vue'
-import GallerySection from './components/GallerySection.vue'
-import ServicesSection from './components/ServicesSection.vue'
-import TestimonialsSection from './components/TestimonialsSection.vue'
-import ContactSection from './components/ContactSection.vue'
-import AppFooter from './components/AppFooter.vue'
+import Navbar from './components/Navbar.vue'
 </script>
 
 <style>
@@ -90,6 +79,11 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: 0;
+}
+
+main {
+  flex: 1;
 }
 
 /* Section Styles */
