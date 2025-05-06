@@ -55,6 +55,14 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+.router-link-active {
+  text-decoration: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

@@ -12,9 +12,11 @@
       <p class="hero-tagline">
         Cultivando elegancia a través del arte del estilo personal
       </p>
-      <button class="btn btn-primary">
-        Reservar Consulta
-      </button>
+      <div class="hero-buttons">
+        <router-link to="/servicios" class="btn btn-primary">
+          Descubrir Servicios
+        </router-link>
+      </div>
     </div>
     <div class="scroll-indicator">
       <ChevronDown class="icon-bounce" />
@@ -82,6 +84,14 @@ import { ChevronDown } from 'lucide-vue-next'
   margin: 0 auto 2.5rem;
   letter-spacing: 0.05em;
   color: var(--color-gray-600);
+}
+
+.hero-buttons {
+  margin-bottom: 2rem;
+}
+
+.hero-buttons a {
+  text-decoration: none;
 }
 
 .scroll-indicator {

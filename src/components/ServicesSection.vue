@@ -14,6 +14,11 @@
           <p class="service-price">{{ service.price }}</p>
         </div>
       </div>
+
+      <div class="services-cta">
+        <p>¿Interesado en nuestros servicios?</p>
+        <router-link to="/contacto" class="btn btn-primary">Solicitar una consulta</router-link>
+      </div>
     </div>
   </section>
 </template>
@@ -71,6 +76,7 @@ const services = [
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .service-card {
@@ -108,9 +114,28 @@ const services = [
   font-weight: 500;
 }
 
+.services-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.services-cta p {
+  font-size: 1.125rem;
+  color: var(--color-gray-600);
+  margin-bottom: 1.5rem;
+}
+
+.services-cta a {
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .services-cta {
+    margin-top: 3rem;
   }
 }
 
