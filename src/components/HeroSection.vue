@@ -73,7 +73,7 @@ import { ChevronDown } from 'lucide-vue-next'
 .hero-title {
   font-size: 3.5rem;
   font-weight: 300;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.05em;
   margin-bottom: 1.5rem;
   color: var(--color-green-900);
 }

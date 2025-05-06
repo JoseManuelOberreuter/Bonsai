@@ -6,7 +6,7 @@
           <h2 class="section-title">Contáctanos</h2>
           <div class="accent-line"></div>
           <p>
-            Nos encantaría saber de ti. Programa una consulta o pregunta sobre nuestros servicios.
+            Nos encantaría saber de ti. Envíanos un mensaje con tus preguntas sobre nuestros servicios.
           </p>
           
           <div class="contact-details">
@@ -23,15 +23,15 @@
               <div>
                 <h4>Horario de Apertura</h4>
                 <p>Lunes - Sábado: 10am - 8pm</p>
-                <p>Domingo: Solo con cita previa</p>
+                <p>Domingo: Cerrado</p>
               </div>
             </div>
             
             <div class="contact-item">
-              <Phone class="contact-icon" />
+              <Mail class="contact-icon" />
               <div>
-                <h4>Llámanos</h4>
-                <p>+1 (555) 123-4567</p>
+                <h4>Email</h4>
+                <p>info@bonsai-salon.com</p>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@
             </div>
             
             <div class="form-group">
-              <label for="service">Servicio</label>
+              <label for="service">Servicio de interés</label>
               <select id="service">
                 <option value="" disabled selected>Selecciona un servicio</option>
                 <option v-for="service in services" :key="service.title" :value="service.title">
@@ -87,15 +87,15 @@
 </template>
 
 <script setup>
-import { MapPin, Clock, Phone } from 'lucide-vue-next'
+import { MapPin, Clock, Mail } from 'lucide-vue-next'
 
 const services = [
-  { title: 'Estilismo Signature' },
-  { title: 'Consulta de Imagen' },
-  { title: 'Preparación para Eventos' },
-  { title: 'Estilismo Editorial' },
-  { title: 'Curación de Vestuario' },
-  { title: 'Actualización Estacional' }
+  { title: 'Corte de Cabello' },
+  { title: 'Coloración' },
+  { title: 'Tratamientos' },
+  { title: 'Peinados' },
+  { title: 'Consulta de Estilo' },
+  { title: 'Otros Servicios' }
 ]
 </script>
 

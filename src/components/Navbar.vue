@@ -10,8 +10,10 @@
             v-for="link in navLinks" 
             :key="link.path" 
             :to="link.path" 
-            class="nav-link"
-            :class="{ active: $route.path === link.path }"
+            :class="[
+              link.isButton ? 'nav-button' : 'nav-link',
+              { active: $route.path === link.path }
+            ]"
           >
             {{ link.name }}
           </router-link>
@@ -36,8 +38,11 @@
           v-for="link in navLinks" 
           :key="link.path" 
           :to="link.path" 
-          class="mobile-nav-link"
-          :class="{ active: $route.path === link.path }"
+          :class="[
+            'mobile-nav-link',
+            { 'mobile-nav-button': link.isButton },
+            { active: $route.path === link.path }
+          ]"
           @click="isOpen = false"
         >
           {{ link.name }}
@@ -59,7 +64,7 @@ const navLinks = [
   { name: 'Inicio', path: '/' },
   { name: 'Servicios', path: '/servicios' },
   { name: 'Galería', path: '/galeria' },
-  { name: 'Contacto', path: '/contacto' }
+  { name: 'Contacto', path: '/contacto', isButton: true }
 ]
 
 const checkScroll = () => {
@@ -109,6 +114,7 @@ onUnmounted(() => {
 
 .navbar-links {
   display: none;
+  height: 40px;
 }
 
 .mobile-toggle {
@@ -165,7 +171,9 @@ onUnmounted(() => {
   
   .navbar-links {
     display: flex;
-    gap: 2.5rem;
+    align-items: center;
+    gap: 2rem;
+    height: 40px;
   }
   
   .mobile-toggle {
@@ -181,6 +189,10 @@ onUnmounted(() => {
     letter-spacing: 0.1em;
     padding-bottom: 0.25rem;
     transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0;
   }
   
   .nav-link::after {
@@ -213,5 +225,60 @@ onUnmounted(() => {
 .navbar.scrolled {
   background-color: var(--color-white);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--color-green-900);
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: none;
+  letter-spacing: normal;
+  padding: 8px 1.4rem;
+  border: 1px solid var(--color-green-900);
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.nav-button:hover {
+  background-color: var(--color-green-900);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button.active {
+  background-color: var(--color-green-900);
+  color: var(--color-white);
+}
+
+.mobile-nav-button {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--color-green-900) !important;
+  border: 1px solid var(--color-green-900);
+  border-radius: 30px;
+  padding: 0.5rem 1.4rem;
+  margin-top: 0.75rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-button.active,
+.mobile-nav-button:hover {
+  background-color: var(--color-green-900);
+  color: var(--color-white) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 </style> 
