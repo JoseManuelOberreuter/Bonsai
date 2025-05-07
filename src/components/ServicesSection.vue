@@ -30,39 +30,39 @@ import { Scissors, Sparkles, Camera, Users, ArrowRight, Clock } from 'lucide-vue
 const services = [
   {
     icon: Scissors,
-    title: 'Estilismo Signature',
-    description: 'Nuestro servicio de estilismo integral adaptado a tus características y preferencias únicas.',
-    price: 'Desde $250'
+    title: 'Corte y Estilo Signature',
+    description: 'Corte personalizado con consulta detallada y acabado de estilismo premium.',
+    price: 'Desde $18.000'
   },
   {
     icon: Sparkles,
-    title: 'Consulta de Imagen',
-    description: 'Un análisis detallado de tu estilo personal, con recomendaciones para mejorarlo.',
-    price: 'Desde $350'
+    title: 'Tinte Completo',
+    description: 'Coloración uniforme para todo el cabello, incluye lavado y peinado.',
+    price: 'Desde $25.000'
   },
   {
     icon: Users,
-    title: 'Preparación para Eventos',
-    description: 'Estilismo completo para ocasiones especiales, asegurando que te veas y sientas excepcional.',
-    price: 'Desde $500'
+    title: 'Peinado para Novias',
+    description: 'Incluye prueba previa y peinado el día del evento.',
+    price: 'Desde $60.000'
   },
   {
     icon: Camera,
-    title: 'Estilismo Editorial',
-    description: 'Estilismo profesional para sesiones fotográficas, campañas y apariciones en medios.',
-    price: 'Presupuesto Personalizado'
+    title: 'Mechas / Highlights',
+    description: 'Mechas para dar dimensión y profundidad a tu color natural.',
+    price: 'Desde $35.000'
   },
   {
     icon: ArrowRight,
-    title: 'Curación de Vestuario',
-    description: 'Selección y organización experta de tu vestuario personal para un estilo sin esfuerzo.',
-    price: 'Desde $600'
+    title: 'Alisado Brasileño',
+    description: 'Reduce el encrespamiento y alisa el cabello por hasta 3 meses.',
+    price: 'Desde $75.000'
   },
   {
     icon: Clock,
-    title: 'Actualización Estacional',
-    description: 'Actualiza tu look con las últimas tendencias de temporada manteniendo tu estilo distintivo.',
-    price: 'Desde $300'
+    title: 'Hidratación Profunda',
+    description: 'Tratamiento intensivo para cabello seco o dañado.',
+    price: '$18.000'
   }
 ]
 </script>
