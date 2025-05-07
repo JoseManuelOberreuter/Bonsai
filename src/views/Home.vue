@@ -2,7 +2,7 @@
   <div>
     <HeroSection />
     <PhilosophySection />
-    <GallerySection />
+    <HomeGallery />
     <ServicesSection />
     <TestimonialsSection />
     <CallToAction 
@@ -20,7 +20,7 @@
 <script setup>
 import HeroSection from '../components/HeroSection.vue'
 import PhilosophySection from '../components/PhilosophySection.vue'
-import GallerySection from '../components/GallerySection.vue'
+import HomeGallery from '../components/HomeGallery.vue'
 import ServicesSection from '../components/ServicesSection.vue'
 import TestimonialsSection from '../components/TestimonialsSection.vue'
 import CallToAction from '../components/CallToAction.vue'
