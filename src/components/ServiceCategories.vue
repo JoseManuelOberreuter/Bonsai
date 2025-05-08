@@ -15,14 +15,14 @@
 
     <!-- Lista de Servicios -->
     <div class="services-container">
-      <div class="service-category" v-for="(category, catIndex) in categories" :key="catIndex" v-show="activeCategory === category.id">
+      <div class="service-category" v-if="currentCategory">
         <div class="category-description">
-          <h3>{{ category.name }}</h3>
-          <p>{{ category.description }}</p>
+          <h3>{{ currentCategory.name }}</h3>
+          <p>{{ currentCategory.description }}</p>
         </div>
         
         <div class="services-list">
-          <div class="service-item" v-for="(service, index) in category.services" :key="index">
+          <div class="service-item" v-for="(service, index) in currentCategory.services" :key="index">
             <div class="service-info">
               <h4 class="service-name">{{ service.name }}</h4>
               <p class="service-description">{{ service.description }}</p>
@@ -46,10 +46,15 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed } from 'vue'
 
 // Estado para la categoría activa
 const activeCategory = ref('haircuts')
+
+// Computed property para obtener la categoría actual
+const currentCategory = computed(() => {
+  return categories.find(category => category.id === activeCategory.value)
+})
 
 // Función para cambiar de categoría
 const changeCategory = (categoryId) => {
@@ -191,15 +196,11 @@ const categories = [
   }
 ]
 
-// Inicializar con la primera categoría
-onMounted(() => {
-  activeCategory.value = categories[0].id
-})
-
 // Exponer valores y funciones para uso externo
 defineExpose({
   activeCategory,
-  changeCategory
+  changeCategory,
+  currentCategory
 })
 </script>
 
