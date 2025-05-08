@@ -63,7 +63,7 @@ const route = useRoute()
 const navLinks = [
   { name: 'Inicio', path: '/' },
   { name: 'Servicios', path: '/servicios' },
-  { name: 'Galería', path: '/galeria' },
+  { name: 'Portafolio', path: '/portafolio' },
   { name: 'Contacto', path: '/contacto', isButton: true }
 ]
 

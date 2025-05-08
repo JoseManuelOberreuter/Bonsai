@@ -19,8 +19,8 @@
       </div>
       
       <div class="gallery-cta">
-        <router-link to="/galeria" class="btn-text">
-          <span>Ver Galería Completa</span>
+        <router-link to="/portafolio" class="btn-text">
+          <span>Ver Portafolios Completo</span>
           <ArrowRight class="icon-arrow" />
         </router-link>
       </div>

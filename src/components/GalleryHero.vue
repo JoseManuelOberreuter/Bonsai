@@ -8,7 +8,7 @@
       <div class="hero-overlay"></div>
     </div>
     <div class="container gallery-hero-content">
-      <h1 class="gallery-hero-title">Nuestra Galería</h1>
+      <h1 class="gallery-hero-title">Nuestro Portafolio</h1>
       <p class="gallery-hero-description">
         Explora nuestra colección de estilos y transformaciones. Cada imagen refleja nuestra pasión 
         por crear experiencias únicas y personalizadas para nuestros clientes.
