@@ -7,7 +7,7 @@
         :key="index"
         class="category-button"
         :class="{ active: activeCategory === category.id }"
-        @click="activeCategory = category.id"
+        @click="changeCategory(category.id)"
       >
         {{ category.name }}
       </button>
@@ -46,10 +46,15 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 // Estado para la categoría activa
 const activeCategory = ref('haircuts')
+
+// Función para cambiar de categoría
+const changeCategory = (categoryId) => {
+  activeCategory.value = categoryId
+}
 
 // Categorías y servicios
 const categories = [
@@ -186,9 +191,15 @@ const categories = [
   }
 ]
 
+// Inicializar con la primera categoría
+onMounted(() => {
+  activeCategory.value = categories[0].id
+})
+
 // Exponer valores y funciones para uso externo
 defineExpose({
-  activeCategory
+  activeCategory,
+  changeCategory
 })
 </script>
 

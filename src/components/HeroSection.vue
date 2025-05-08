@@ -13,8 +13,8 @@
         Cultivando elegancia a través del arte del estilo personal
       </p>
       <div class="hero-buttons">
-        <router-link to="/servicios" class="btn btn-primary">
-          Descubrir Servicios
+        <router-link to="/contacto" class="btn btn-primary">
+          ¡Reserva Ya!
         </router-link>
       </div>
     </div>
