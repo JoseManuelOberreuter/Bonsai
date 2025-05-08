@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-import SectionHeader from './SectionHeader.vue'
+import SectionHeader from '../UI/SectionHeader.vue'
 import { Quote } from 'lucide-vue-next'
 
 const testimonials = [

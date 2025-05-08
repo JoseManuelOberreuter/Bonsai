@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import SectionHeader from './SectionHeader.vue'
+import SectionHeader from '../UI/SectionHeader.vue'
 import { ArrowRight } from 'lucide-vue-next'
 
 const galleryImages = [

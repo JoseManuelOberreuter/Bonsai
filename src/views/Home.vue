@@ -18,11 +18,11 @@
 </template>
 
 <script setup>
-import HeroSection from '../components/HeroSection.vue'
-import PhilosophySection from '../components/PhilosophySection.vue'
-import HomeGallery from '../components/HomeGallery.vue'
-import ServicesSection from '../components/ServicesSection.vue'
-import TestimonialsSection from '../components/TestimonialsSection.vue'
-import CallToAction from '../components/CallToAction.vue'
-import AppFooter from '../components/AppFooter.vue'
+import HeroSection from '../components/Home/HeroSection.vue'
+import PhilosophySection from '../components/Home/PhilosophySection.vue'
+import HomeGallery from '../components/Home/HomeGallery.vue'
+import ServicesSection from '../components/Home/ServicesSection.vue'
+import TestimonialsSection from '../components/Home/TestimonialsSection.vue'
+import CallToAction from '../components/UI/CallToAction.vue'
+import AppFooter from '../components/Layout/AppFooter.vue'
 </script> 

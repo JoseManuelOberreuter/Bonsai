@@ -19,10 +19,10 @@
 </template>
 
 <script setup>
-import AboutHero from '../components/AboutHero.vue'
-import AboutHistory from '../components/AboutHistory.vue'
-import AboutValues from '../components/AboutValues.vue'
-import AboutTeam from '../components/AboutTeam.vue'
-import CallToAction from '../components/CallToAction.vue'
-import AppFooter from '../components/AppFooter.vue'
+import AboutHero from '../components/About/AboutHero.vue'
+import AboutHistory from '../components/About/AboutHistory.vue'
+import AboutValues from '../components/About/AboutValues.vue'
+import AboutTeam from '../components/About/AboutTeam.vue'
+import CallToAction from '../components/UI/CallToAction.vue'
+import AppFooter from '../components/Layout/AppFooter.vue'
 </script> 

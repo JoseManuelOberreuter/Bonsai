@@ -35,10 +35,10 @@
 
 <script setup>
 import { ref } from 'vue'
-import ServicesHero from '../components/ServicesHero.vue'
-import ServiceCategories from '../components/ServiceCategories.vue'
-import CallToAction from '../components/CallToAction.vue'
-import AppFooter from '../components/AppFooter.vue'
+import ServicesHero from '../components/Services/ServicesHero.vue'
+import ServiceCategories from '../components/Services/ServiceCategories.vue'
+import CallToAction from '../components/UI/CallToAction.vue'
+import AppFooter from '../components/Layout/AppFooter.vue'
 import { ClockIcon, InfoIcon } from 'lucide-vue-next'
 </script>
 

@@ -15,8 +15,8 @@
 </template>
 
 <script setup>
-import GalleryHero from '../components/GalleryHero.vue'
-import GalleryGrid from '../components/GalleryGrid.vue'
-import CallToAction from '../components/CallToAction.vue'
-import AppFooter from '../components/AppFooter.vue'
+import GalleryHero from '../components/Portfolio/GalleryHero.vue'
+import GalleryGrid from '../components/Portfolio/GalleryGrid.vue'
+import CallToAction from '../components/UI/CallToAction.vue'
+import AppFooter from '../components/Layout/AppFooter.vue'
 </script> 
