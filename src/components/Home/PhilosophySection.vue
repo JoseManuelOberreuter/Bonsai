@@ -21,7 +21,7 @@
             creando looks que son refinados y modernos sin esfuerzo. Honramos la belleza natural 
             de cada individuo, realzando en lugar de alterar su esencia.
           </p>
-          <button class="btn-text">
+          <button class="btn-text" @click="handleClick">
             <span>Conocer Más</span>
             <ArrowRight class="icon-arrow" />
           </button>
@@ -33,6 +33,13 @@
 
 <script setup>
 import { ArrowRight } from 'lucide-vue-next'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const handleClick = () => {
+  router.push('/nosotros')
+}
 </script>
 
 <style scoped>
