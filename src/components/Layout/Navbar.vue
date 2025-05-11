@@ -129,6 +129,34 @@ onUnmounted(() => {
   color: var(--color-green-900);
   text-decoration: none;
   letter-spacing: 0.2em;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+  color: var(--color-amber-600);
+}
+
+.logo:active {
+  transform: translateY(1px);
+  color: var(--color-amber-700);
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--color-amber-400);
+  transition: width 0.3s ease;
+}
+
+.logo:hover::after {
+  width: 100%;
 }
 
 .navbar-links {
