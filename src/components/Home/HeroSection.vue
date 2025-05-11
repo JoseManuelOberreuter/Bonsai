@@ -39,6 +39,7 @@ import { ChevronDown } from 'lucide-vue-next'
   text-align: center;
   color: var(--color-white);
   overflow: hidden;
+  --color-green-900-rgb: 34, 139, 34;
 }
 
 .hero-background {
@@ -92,6 +93,56 @@ import { ChevronDown } from 'lucide-vue-next'
 
 .hero-buttons a {
   text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  border: 2px solid var(--color-green-900);
+  background-color: transparent;
+  color: var(--color-green-900);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.hero-buttons a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: shine 4s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.hero-buttons a:hover {
+  background-color: var(--color-green-900);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-buttons a:active {
+  transform: translateY(0);
 }
 
 .scroll-indicator {
