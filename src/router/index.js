@@ -29,7 +29,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/Bonsai/'),
   routes,
   scrollBehavior() {
     // always scroll to top when navigating between views
