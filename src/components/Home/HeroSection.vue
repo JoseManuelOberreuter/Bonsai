@@ -10,7 +10,7 @@
     <div class="container hero-content">
       <h1 class="hero-title">BONSAI</h1>
       <p class="hero-tagline">
-        Cultivando elegancia a través del arte del estilo personal
+        Cultivando elegancia a través del arte del estilo del pico
       </p>
       <div class="hero-buttons">
         <router-link to="/contacto" class="btn btn-primary">

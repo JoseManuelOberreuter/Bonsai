@@ -22,22 +22,22 @@ const socialLinks = [
     name: 'Instagram',
     icon: Instagram,
     url: '#'
-  },
-  {
-    name: 'Facebook',
-    icon: Facebook,
-    url: '#'
-  },
-  {
-    name: 'Twitter',
-    icon: Twitter,
-    url: '#'
-  },
-  {
-    name: 'LinkedIn',
-    icon: Linkedin,
-    url: '#'
   }
+  // {
+  //   name: 'Facebook',
+  //   icon: Facebook,
+  //   url: '#'
+  // },
+  // {
+  //   name: 'Twitter',
+  //   icon: Twitter,
+  //   url: '#'
+  // },
+  // {
+  //   name: 'LinkedIn',
+  //   icon: Linkedin,
+  //   url: '#'
+  // }
 ]
 </script>
 

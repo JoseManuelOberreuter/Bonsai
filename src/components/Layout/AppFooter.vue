@@ -16,17 +16,25 @@
         </p>
         
         <div class="footer-links">
-          <a href="#">Política de Privacidad</a>
-          <a href="#">Términos de Servicio</a>
+          <a href="#" @click.prevent="showTermsModal = true">Términos de Servicio</a>
           <a href="#">Contacto</a>
         </div>
       </div>
     </div>
+    
+    <TermsOfServiceModal 
+      :is-open="showTermsModal"
+      @close="showTermsModal = false"
+    />
   </footer>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import SocialLinks from './SocialLinks.vue'
+import TermsOfServiceModal from '../Modals/TermsOfServiceModal.vue'
+
+const showTermsModal = ref(false)
 </script>
 
 <style scoped>

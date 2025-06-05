@@ -33,19 +33,6 @@
           <p class="member-role">Colorista Creativa</p>
           <p class="member-bio">Maestra en técnicas de balayage y mechas personalizadas. Sus trabajos de color han sido reconocidos en revistas de moda nacionales.</p>
         </div>
-        <div class="team-member">
-          <div class="member-image">
-            <img 
-              src="https://images.unsplash.com/photo-1622296089863-eb7fc530daa8?q=80&w=774&auto=format&fit=crop"
-              alt="Miguel Soto - Especialista en Barbería" 
-              class="rounded-image"
-            />
-            <div class="image-decoration"></div>
-          </div>
-          <h3 class="member-name">Miguel Soto</h3>
-          <p class="member-role">Especialista en Barbería</p>
-          <p class="member-bio">Combina técnicas tradicionales de barbería con tendencias modernas. Experto en cortes masculinos, arreglo de barba y tratamientos faciales.</p>
-        </div>
       </div>
       <div class="team-cta">
         <a href="/contacto" class="btn-primary">
@@ -202,7 +189,7 @@
 
 @media (min-width: 768px) {
   .team-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
   }
 }

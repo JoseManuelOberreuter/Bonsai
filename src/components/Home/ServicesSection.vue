@@ -16,8 +16,10 @@
       </div>
 
       <div class="services-cta">
-        <p>¿Interesado en nuestros servicios?</p>
-        <router-link to="/contacto" class="btn btn-primary">Solicitar una consulta</router-link>
+        <button class="btn-text" @click="handleClick">
+          <span>Revisa todos los servicios</span>
+          <ArrowRight class="icon-arrow" />
+        </button>
       </div>
     </div>
   </section>
@@ -26,6 +28,12 @@
 <script setup>
 import SectionHeader from '../UI/SectionHeader.vue'
 import { Scissors, Sparkles, Camera, Users, ArrowRight, Clock } from 'lucide-vue-next'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+const handleClick = () => {
+  router.push('/servicios')
+}
 
 const services = [
   {
@@ -127,6 +135,34 @@ const services = [
 
 .services-cta a {
   text-decoration: none;
+}
+
+.btn-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--color-amber-600);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.btn-text:hover {
+  color: var(--color-amber-700);
+}
+
+.icon-arrow {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-text:hover .icon-arrow {
+  transform: translateX(4px);
 }
 
 @media (min-width: 768px) {
