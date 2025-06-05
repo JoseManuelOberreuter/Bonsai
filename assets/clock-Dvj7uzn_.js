@@ -1,4 +1,4 @@
-import{c}from"./AppFooter-C1_0FAgr.js";/**
+import{c}from"./AppFooter-BQp7-JJJ.js";/**
  * @license lucide-vue-next v0.507.0 - ISC
  *
  * This source code is licensed under the ISC license.
